@@ -1,0 +1,37 @@
+﻿CREATE DATABASE ContactManagement;
+
+USE ContactManagement;
+
+CREATE TABLE Contacts (
+    ContactID INT PRIMARY KEY AUTO_INCREMENT,
+    LastName VARCHAR(50) NOT NULL,
+    FirstName VARCHAR(50) NOT NULL,
+    MiddleName VARCHAR(50),
+    PhoneNumber VARCHAR(14) NOT NULL,
+    Email VARCHAR(50),
+    Company VARCHAR(50),
+    Position VARCHAR(50),
+    ContactGroup VARCHAR(20),
+    BirthDate DATE,
+    Photo BLOB
+);
+
+CREATE TABLE Groups (
+    GroupID INT PRIMARY KEY AUTO_INCREMENT,
+    GroupName VARCHAR(20)
+);
+
+
+CREATE TABLE ContactsGroups (
+    ContactID INT,
+    GroupID INT,
+    FOREIGN KEY (ContactID) REFERENCES Contacts(ContactID),
+    FOREIGN KEY (GroupID) REFERENCES Groups(GroupID)
+);
+
+CREATE TABLE Files (
+    FileID INT PRIMARY KEY AUTO_INCREMENT,
+    FileName VARCHAR(100),
+    FileType VARCHAR(50),
+    FileContent VARBINARY(MAX)
+);

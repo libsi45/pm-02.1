@@ -1,0 +1,5 @@
+C:\Users\libsi\source\repos\App\задание 3 часа\задание 3 часа\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\libsi\source\repos\App\задание 3 часа\задание 3 часа\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\libsi\source\repos\App\задание 3 часа\задание 3 часа\obj\Debug\net8.0-windows\задание 3 часа_MarkupCompile.cache
+C:\Users\libsi\source\repos\App\задание 3 часа\задание 3 часа\obj\Debug\net8.0-windows\задание 3 часа_MarkupCompile.lref
+C:\Users\libsi\source\repos\App\задание 3 часа\задание 3 часа\obj\Debug\net8.0-windows\Window1.g.cs
